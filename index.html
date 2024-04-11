@@ -425,7 +425,7 @@
 
                                 <!-- input para el número telefonico del lead-->
                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                    <input class="form-control" id="phone" type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="(123) 456-7890"
                                         data-sb-validations="required" />
                                     <label for="phone">Phone number</label>
 
@@ -492,7 +492,9 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="js/bootstrapvalidate.js"></script>
 </body>
 
 </html>
